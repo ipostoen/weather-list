@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="row">
+
+    <div class="col-md-3 col" style="margin-top:25px;" *ngIf="loc">
+
+      <mat-card class="example-card h-100 align-items-center">
+        <mat-card-header>
+          <mat-card-title><i class="fas fa-map-marker-alt"></i> {{ loc.timezone }}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="text-center">
+          <p class="icon"><i class="wi {{ loc.currently.icon | weatherIcon }}"></i></p>
+          <h5>{{ loc.currently.temperature | temp }}'</h5>
+        </mat-card-content>
+      </mat-card>
+
+    </div>
+
+  <div class="col-md-3 col" style="margin-top:25px;" *ngFor="let item of citys">
+
+    <mat-card class="example-card h-100 align-items-center" *ngIf="item.temp">
+      <mat-card-header>
+        <mat-card-title><i (click)="delete(citys.indexOf(item))" class="fas fa-times"></i> {{ item.name }}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content class="text-center">
+        <p class="icon"><i class="wi {{ item.temp.currently.icon | weatherIcon }}"></i></p>
+        <h5>{{ item.temp.currently.temperature | temp }}'</h5>
+      </mat-card-content>
+    </mat-card>
+
+  </div>
+
+
+  <div class="col-md-3 col" style="margin-top:25px;">
+
+    <mat-card class="example-card h-100 align-items-center">
+      <mat-card-header>
+        <mat-card-title>
+          <h5 class="card-title">Добавить город</h5>
+        </mat-card-title>
+      </mat-card-header>
+      <mat-card-content class="text-center">
+        <p class="icon" (click)="openDiaolog()"><i class="fas fa-plus-circle"></i></p>
+      </mat-card-content>
+    </mat-card>
+
+  </div>
+</div>

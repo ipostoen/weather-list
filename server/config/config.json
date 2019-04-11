@@ -1,0 +1,22 @@
+{
+    "test": {
+      "PORT": "3000",
+      "MONGODB_URI": "mongodb://localhost:27017/HuperTube",
+      "JWT_SECRET": "lkfn-aor1-23A2-34zx-ck98",
+      "GMAIL_USER": "antonmolchan0@gmail.com",
+      "GMAIL_PASS": "q1w2e3a1s2d3z1x2c3",
+      "INTRA_SECRET": "ea060f4725a180339eb2b6ff0798aaef6dfcbc25c2d0151784dd44426564974f",
+      "INTRA_CLIENT_ID": "792b479c6c3a8b2aa6bd91ffbdef3389771b05a64c1d62b380ede7f7667f7320",
+      "SERVER_URL": "http://localhost:3000/"
+    },
+    "development": {
+      "PORT": "3000",
+      "MONGODB_URI": "mongodb://localhost:27017/HuperTubeTest",
+      "JWT_SECRET": "lkfn-aor1-23A2-34zx-ck98",
+      "GMAIL_USER": "antonmolchan0@gmail.com",
+      "GMAIL_PASS": "q1w2e3a1s2d3z1x2c3",
+      "INTRA_SECRET": "ea060f4725a180339eb2b6ff0798aaef6dfcbc25c2d0151784dd44426564974f",
+      "INTRA_CLIENT_ID": "792b479c6c3a8b2aa6bd91ffbdef3389771b05a64c1d62b380ede7f7667f7320",
+      "SERVER_URL": "http://localhost:3000/"
+    }
+}
